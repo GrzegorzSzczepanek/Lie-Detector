@@ -1,28 +1,27 @@
 
 import pandas as pd
 from scipy.signal import welch
-from sklearn.linear_model import LinearRegression, LogisticRegression
-import statsmodels.api as sm
+from sklearn.linear_model import LogisticRegression
 import json
 import os
 import joblib
 import numpy as np
 from sklearn.decomposition import PCA
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import GridSearchCV, KFold, RandomizedSearchCV, train_test_split, StratifiedKFold
+from sklearn.model_selection import GridSearchCV, train_test_split, StratifiedKFold
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, f1_score, mean_absolute_error, mean_squared_error, precision_score, recall_score
+from sklearn.metrics import classification_report, confusion_matrix
 from datetime import datetime as datetime
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler, FunctionTransformer
 from scipy.signal import welch
 from scipy.stats import skew, kurtosis
-importmachine_learning.files_lib as FL
-importmachine_learning.preprocessing_lib as PL
-importmachine_learning.visualisation_lib as VL
+import machine_learning.files_lib as FL
+import machine_learning.preprocessing_lib as PL
+import machine_learning.visualisation_lib as VL
 
 def save_model(best_estimator, result_folder):
     """
@@ -383,6 +382,8 @@ def grid_search_random_forest_eeg(X, y, param_grid, test_size=0.2, cv=5, scoring
     y_pred = best_model.predict(X_test_raw)
     
     return best_model, y_pred
+
+    # I didn't need some of these things below for most of my training so I return only best model and preds
     test_score = best_model.score(X_test_raw, y_test)
     cm = confusion_matrix(y_test, y_pred)
     classification_rep = classification_report(y_test, y_pred, output_dict=True)
@@ -435,6 +436,7 @@ def grid_search_random_forest_eeg(X, y, param_grid, test_size=0.2, cv=5, scoring
     
     return best_model, grid_search.best_params_, test_score
 
+# IMPORTANT - things related to my feature extraction approach
 def _aggregate_importances_per_channel(feature_importances, n_channels):
     """
     Aggregate feature importances per channel.
@@ -539,7 +541,6 @@ def feature_extraction_grid_search(X, y, param_grid, test_size=0.2, cv=5, scorin
     VL.plot_cv_results(grid_search.cv_results_, model_name, result_folder)
     VL.plot_fit_and_score_times(grid_search.cv_results_, model_name, result_folder)
     
-    # Check if the classifier has feature_importances_ attribute
     if hasattr(best_model.named_steps['classifier'], 'feature_importances_'):
         feature_importances = best_model.named_steps['classifier'].feature_importances_
         channel_importances = _aggregate_importances_per_channel(feature_importances, n_channels)
@@ -556,9 +557,6 @@ def feature_extraction_grid_search(X, y, param_grid, test_size=0.2, cv=5, scorin
 
 
 
-
-
-
 def grid_search_logistic_regression_eeg(X, y, param_grid, test_size=0.2, cv=5, scoring='accuracy', result_folder=None, random_state=42):
     """
     Grid search for Logistic Regression with EEG data preprocessing for binary classification.
@@ -568,7 +566,6 @@ def grid_search_logistic_regression_eeg(X, y, param_grid, test_size=0.2, cv=5, s
         result_folder = f"../results/logistic_regression_eeg_{timestamp}"
     os.makedirs(result_folder, exist_ok=True)
     
-    # Stratify to maintain class balance in train/test split
     X_train_raw, X_test_raw, y_train, y_test = train_test_split(
         X, y, test_size=test_size, random_state=random_state, stratify=y
     )
@@ -681,12 +678,12 @@ def grid_search_knn_eeg(X, y, param_grid=None, test_size=0.2, cv=5, scoring='acc
         result_folder = f"../results/knn_eeg_{datetime.now().strftime('%Y-%m-%d_%H:%M:%S')}"
     os.makedirs(result_folder, exist_ok=True)
     
-    # Split the data
+    
     X_train_raw, X_test_raw, y_train, y_test = train_test_split(
         X, y, test_size=test_size, random_state=random_state, stratify=y
     )
     
-    # Build the pipeline
+    
     if apply_pca:
         steps = [
             ('preprocess', FunctionTransformer(preprocess_eeg_data, validate=False)),
@@ -696,7 +693,7 @@ def grid_search_knn_eeg(X, y, param_grid=None, test_size=0.2, cv=5, scoring='acc
         ]
         pipeline = Pipeline(steps)
         
-        # Set default param_grid if none provided
+        
         if param_grid is None:
             param_grid = {
                 'pca__n_components': [10, 20, 30],
@@ -712,7 +709,7 @@ def grid_search_knn_eeg(X, y, param_grid=None, test_size=0.2, cv=5, scoring='acc
         ]
         pipeline = Pipeline(steps)
         
-        # Set default param_grid if none provided
+        
         if param_grid is None:
             param_grid = {
                 'classifier__n_neighbors': [3, 5, 7],
@@ -720,13 +717,13 @@ def grid_search_knn_eeg(X, y, param_grid=None, test_size=0.2, cv=5, scoring='acc
                 'classifier__metric': ['euclidean', 'manhattan']
             }
         else:
-            # Remove PCA parameters if present
+            
             param_grid = {key: param_grid[key] for key in param_grid if not key.startswith('pca__')}
     
-    # Cross-validation strategy
+    
     cv_strategy = StratifiedKFold(n_splits=cv, shuffle=True, random_state=random_state)
     
-    # Initialize GridSearchCV
+    
     grid_search = GridSearchCV(
         estimator=pipeline,
         param_grid=param_grid,
@@ -737,19 +734,19 @@ def grid_search_knn_eeg(X, y, param_grid=None, test_size=0.2, cv=5, scoring='acc
         return_train_score=True
     )
     
-    # Fit the model
+    
     grid_search.fit(X_train_raw, y_train)
     
-    # Get the best model
+    
     best_model = grid_search.best_estimator_
     
-    # Evaluate on test set
+    
     y_pred = best_model.predict(X_test_raw)
     test_score = best_model.score(X_test_raw, y_test)
     cm = confusion_matrix(y_test, y_pred)
     classification_rep = classification_report(y_test, y_pred, output_dict=True)
     
-    # Prepare results
+    
     result = {
         'best_params': grid_search.best_params_,
         'best_score_cv': grid_search.best_score_,
@@ -762,16 +759,16 @@ def grid_search_knn_eeg(X, y, param_grid=None, test_size=0.2, cv=5, scoring='acc
         'classification_report': classification_rep
     }
     
-    # Save results
+    
     FL.save_results(result, result_folder)
     FL.save_model(best_model, result_folder)
     
-    # Visualizations
+    
     VL.plot_confusion_matrix(cm, 'KNeighborsClassifier', result_folder)
     VL.plot_cv_results(grid_search.cv_results_, 'KNeighborsClassifier', result_folder)
     VL.plot_fit_and_score_times(grid_search.cv_results_, 'KNeighborsClassifier', result_folder)
     
-    # Save classification report
+    
     report_path = os.path.join(result_folder, 'classification_report.txt')
     with open(report_path, 'w') as f:
         f.write(classification_report(y_test, y_pred))
@@ -779,8 +776,8 @@ def grid_search_knn_eeg(X, y, param_grid=None, test_size=0.2, cv=5, scoring='acc
     
     return best_model, grid_search.best_params_, test_score
 
-#### EXPERIMENTAL APPROACH 2 ####
 
+### EXPERIMENTAL APPROACH ###
 
 # def preprocess_eeg_data_2(X, fs=256):
 #     """

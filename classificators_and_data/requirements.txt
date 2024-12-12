@@ -1,0 +1,5 @@
+joblib==1.4.2
+mne==1.8.0
+pandas==2.2.3
+seaborn==0.13.2
+scikit-learn==1.6.0

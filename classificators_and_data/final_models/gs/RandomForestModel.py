@@ -12,7 +12,7 @@ sys.path.append(project_root)
 
 from final_models.LieModel import LieModel
 from final_models.ExperimentManager import ExperimentManager
-importmachine_learning.ml_lib as ML
+import machine_learning.ml_lib as ML
 
 class RandomForestModel(LieModel):
     def __init__(self, preprocess_params=None) -> None:

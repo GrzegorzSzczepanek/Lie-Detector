@@ -1,20 +1,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import json
 import time
-import mne
-import pandas as pd
 from data_preprocessing.utils import preprocess_eeg_data, process_fixed_time_epochs, process_variable_time_epochs
-import statistics as stats
 import os
-import data_processing as dp
-from statsmodels.stats.anova import AnovaRM
 import seaborn as sns
-from scipy.stats import ttest_ind, f_oneway, pearsonr
-from sklearn.cluster import KMeans
 import data_processing.data_processing as dp
 import datetime
-import ast 
+
 
 def plot_heatmap_mean_test_scores(cv_results_df, param_x, param_y):
     """

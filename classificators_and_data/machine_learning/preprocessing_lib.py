@@ -1,7 +1,7 @@
 import numpy as np
 import mne 
 import pandas as pd
-frommachine_learning.config import project_root
+from machine_learning.config import project_root
 import data_preprocessing.utils as utils
 
 
