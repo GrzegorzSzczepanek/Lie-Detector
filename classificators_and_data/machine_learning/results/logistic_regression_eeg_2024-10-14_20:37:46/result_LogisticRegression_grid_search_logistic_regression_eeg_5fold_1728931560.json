@@ -1,0 +1,164 @@
+{
+    "best_params": {
+        "classifier__C": 10.0,
+        "classifier__fit_intercept": false,
+        "classifier__penalty": "l2",
+        "classifier__solver": "lbfgs"
+    },
+    "best_score_cv": 0.5461631520532741,
+    "test_score_accuracy": 0.5601503759398496,
+    "cv_results": {
+        "mean_fit_time": "[15.27649374 16.51573238 16.62312646 17.40594234 16.83335266 19.32872391\n 18.6651268  20.74454355 18.82150016 20.82700105 19.25790625 21.7397768\n 20.94868217 24.56701493 28.23095579 35.73369994]",
+        "std_fit_time": "[0.20099398 0.71139144 0.22407037 0.19831157 0.63782897 0.18667654\n 0.9100577  0.17859794 0.20448431 0.33233871 0.18232604 0.39019565\n 0.9627539  0.14841729 4.57972834 0.17471226]",
+        "mean_score_time": "[4.06602497 3.95871587 3.84622698 4.9171988  4.96352396 4.36877546\n 4.59539871 4.57697182 5.49363647 4.76460538 4.57540188 4.94661756\n 5.17871299 5.39665041 7.70152297 8.05285888]",
+        "std_score_time": "[0.07906139 0.12032292 0.04381788 0.58269337 0.29958182 0.05400818\n 0.1361168  0.11308505 0.11048002 0.12578317 0.05811143 0.20647893\n 0.19179777 0.0721105  1.96527963 0.6531153 ]",
+        "param_classifier__C": "[0.01 0.01 0.01 0.01 0.1 0.1 0.1 0.1 1.0 1.0 1.0 1.0 10.0 10.0 10.0 10.0]",
+        "param_classifier__fit_intercept": "[True True False False True True False False True True False False True\n True False False]",
+        "param_classifier__penalty": "['l2' 'l2' 'l2' 'l2' 'l2' 'l2' 'l2' 'l2' 'l2' 'l2' 'l2' 'l2' 'l2' 'l2'\n 'l2' 'l2']",
+        "param_classifier__solver": "['lbfgs' 'sag' 'lbfgs' 'sag' 'lbfgs' 'sag' 'lbfgs' 'sag' 'lbfgs' 'sag'\n 'lbfgs' 'sag' 'lbfgs' 'sag' 'lbfgs' 'sag']",
+        "params": [
+            {
+                "classifier__C": 0.01,
+                "classifier__fit_intercept": true,
+                "classifier__penalty": "l2",
+                "classifier__solver": "lbfgs"
+            },
+            {
+                "classifier__C": 0.01,
+                "classifier__fit_intercept": true,
+                "classifier__penalty": "l2",
+                "classifier__solver": "sag"
+            },
+            {
+                "classifier__C": 0.01,
+                "classifier__fit_intercept": false,
+                "classifier__penalty": "l2",
+                "classifier__solver": "lbfgs"
+            },
+            {
+                "classifier__C": 0.01,
+                "classifier__fit_intercept": false,
+                "classifier__penalty": "l2",
+                "classifier__solver": "sag"
+            },
+            {
+                "classifier__C": 0.1,
+                "classifier__fit_intercept": true,
+                "classifier__penalty": "l2",
+                "classifier__solver": "lbfgs"
+            },
+            {
+                "classifier__C": 0.1,
+                "classifier__fit_intercept": true,
+                "classifier__penalty": "l2",
+                "classifier__solver": "sag"
+            },
+            {
+                "classifier__C": 0.1,
+                "classifier__fit_intercept": false,
+                "classifier__penalty": "l2",
+                "classifier__solver": "lbfgs"
+            },
+            {
+                "classifier__C": 0.1,
+                "classifier__fit_intercept": false,
+                "classifier__penalty": "l2",
+                "classifier__solver": "sag"
+            },
+            {
+                "classifier__C": 1.0,
+                "classifier__fit_intercept": true,
+                "classifier__penalty": "l2",
+                "classifier__solver": "lbfgs"
+            },
+            {
+                "classifier__C": 1.0,
+                "classifier__fit_intercept": true,
+                "classifier__penalty": "l2",
+                "classifier__solver": "sag"
+            },
+            {
+                "classifier__C": 1.0,
+                "classifier__fit_intercept": false,
+                "classifier__penalty": "l2",
+                "classifier__solver": "lbfgs"
+            },
+            {
+                "classifier__C": 1.0,
+                "classifier__fit_intercept": false,
+                "classifier__penalty": "l2",
+                "classifier__solver": "sag"
+            },
+            {
+                "classifier__C": 10.0,
+                "classifier__fit_intercept": true,
+                "classifier__penalty": "l2",
+                "classifier__solver": "lbfgs"
+            },
+            {
+                "classifier__C": 10.0,
+                "classifier__fit_intercept": true,
+                "classifier__penalty": "l2",
+                "classifier__solver": "sag"
+            },
+            {
+                "classifier__C": 10.0,
+                "classifier__fit_intercept": false,
+                "classifier__penalty": "l2",
+                "classifier__solver": "lbfgs"
+            },
+            {
+                "classifier__C": 10.0,
+                "classifier__fit_intercept": false,
+                "classifier__penalty": "l2",
+                "classifier__solver": "sag"
+            }
+        ],
+        "split0_test_score": "[0.53647059 0.53647059 0.54117647 0.53882353 0.53882353 0.54352941\n 0.53176471 0.53411765 0.54352941 0.54588235 0.55058824 0.53176471\n 0.56235294 0.54588235 0.56705882 0.52941176]",
+        "split1_test_score": "[0.55058824 0.54823529 0.54823529 0.54823529 0.51294118 0.52470588\n 0.52470588 0.52941176 0.54823529 0.52235294 0.53882353 0.52941176\n 0.51294118 0.52       0.51058824 0.52941176]",
+        "split2_test_score": "[0.48705882 0.48941176 0.48235294 0.48       0.50117647 0.50117647\n 0.50588235 0.50117647 0.49882353 0.50823529 0.50823529 0.50117647\n 0.52941176 0.50588235 0.52941176 0.50117647]",
+        "split3_test_score": "[0.55294118 0.55058824 0.53882353 0.53647059 0.55058824 0.53882353\n 0.54588235 0.53176471 0.51529412 0.54823529 0.51764706 0.53647059\n 0.53176471 0.54588235 0.52705882 0.53647059]",
+        "split4_test_score": "[0.55660377 0.55660377 0.55896226 0.55896226 0.56839623 0.5495283\n 0.55896226 0.55896226 0.58962264 0.55660377 0.58490566 0.55424528\n 0.59433962 0.55896226 0.59669811 0.55424528]",
+        "mean_test_score": "[0.53673252 0.53626193 0.5339101  0.53249834 0.53438513 0.53155272\n 0.53343951 0.53108657 0.539101   0.53626193 0.54003996 0.53061376\n 0.54616204 0.53532186 0.54616315 0.53014317]",
+        "std_test_score": "[0.02575699 0.02432027 0.02671294 0.02742208 0.02450164 0.01725702\n 0.01813678 0.01835277 0.03112724 0.01804803 0.02697649 0.01710014\n 0.02889535 0.01940804 0.03130997 0.01709437]",
+        "rank_test_score": "[ 5  6 10 12  9 13 11 14  4  6  3 15  2  8  1 16]",
+        "split0_train_score": "[0.56621542 0.56856975 0.56444968 0.56386109 0.57680989 0.57210124\n 0.57739847 0.57386698 0.59917599 0.5732784  0.60035315 0.5732784\n 0.61212478 0.57445556 0.60859329 0.57445556]",
+        "split1_train_score": "[0.57916421 0.57739847 0.57504414 0.57680989 0.60447322 0.59329017\n 0.59917599 0.59093584 0.63331371 0.5956445  0.62683932 0.59329017\n 0.63037081 0.59505592 0.63213655 0.59329017]",
+        "split2_train_score": "[0.58151854 0.58151854 0.58622719 0.58387287 0.59446733 0.5956445\n 0.59387875 0.59329017 0.61035903 0.59329017 0.61624485 0.59623308\n 0.61977634 0.59329017 0.61977634 0.59682166]",
+        "split3_train_score": "[0.5732784  0.57210124 0.57680989 0.57504414 0.5891701  0.58799294\n 0.58858152 0.58622719 0.60565038 0.58858152 0.60388464 0.58740436\n 0.6209535  0.5891701  0.62389641 0.58858152]",
+        "split4_train_score": "[0.56529412 0.56588235 0.56352941 0.56294118 0.57705882 0.57117647\n 0.57588235 0.57176471 0.59647059 0.57117647 0.59470588 0.57470588\n 0.61705882 0.57176471 0.61411765 0.57588235]",
+        "mean_train_score": "[0.57309414 0.57309407 0.57321206 0.57250583 0.58839587 0.58404106\n 0.58698342 0.58321698 0.60899394 0.58439421 0.60840557 0.58498238\n 0.62005685 0.58474729 0.61970405 0.58580625]",
+        "std_train_score": "[0.00657278 0.005709   0.00844071 0.00800489 0.01057078 0.01042938\n 0.00909795 0.0088169  0.01309749 0.01021284 0.01161223 0.00942394\n 0.00598609 0.0097291  0.00808462 0.00908154]"
+    },
+    "model_name": "LogisticRegression",
+    "search_type": "grid_search_logistic_regression_eeg",
+    "cv_folds": 5,
+    "date": "2024-10-14_20:46:00",
+    "classification_report": {
+        "0": {
+            "precision": 0.5720524017467249,
+            "recall": 0.49063670411985016,
+            "f1-score": 0.5282258064516129,
+            "support": 267.0
+        },
+        "1": {
+            "precision": 0.5511551155115512,
+            "recall": 0.630188679245283,
+            "f1-score": 0.5880281690140845,
+            "support": 265.0
+        },
+        "accuracy": 0.5601503759398496,
+        "macro avg": {
+            "precision": 0.561603758629138,
+            "recall": 0.5604126916825666,
+            "f1-score": 0.5581269877328487,
+            "support": 532.0
+        },
+        "weighted avg": {
+            "precision": 0.561643039242362,
+            "recall": 0.5601503759398496,
+            "f1-score": 0.5580145772769042,
+            "support": 532.0
+        }
+    }
+}

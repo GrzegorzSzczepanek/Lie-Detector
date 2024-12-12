@@ -1,0 +1,18 @@
+{
+    "batch_size": 128,
+    "device": "GPU",
+    "model": "DGCNN",
+    "params": {
+        "hid_channels": 32,
+        "lr": 1e-06,
+        "max_epochs": 20,
+        "num_layers": 2
+    },
+    "run_counter": 15,
+    "run_id": "1727734107",
+    "run_name": "ostateczny test CUDA v2",
+    "test_accuracy": 0.49529188871383667,
+    "test_loss": 0.7639244794845581,
+    "tested_param": "lr",
+    "timestamp": "2024-10-01T00:11:13.790366"
+}

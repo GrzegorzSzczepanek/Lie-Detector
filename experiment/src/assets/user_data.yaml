@@ -1,0 +1,10 @@
+id: ABC123
+# tylko pełne imię bez zdrobnień
+name: Jan
+surname: Kowalski
+# w formacie dzień (liczba) miesiąc (słownie np. stycznia, lutego, marca, kwietnia, maja, czerwca, lipca, sierpnia, września, października, listopada, grudnia)
+birth_date: 1 stycznia
+# tylko nazwa miasta
+hometown: Warszawa
+# m lub k
+gender: m

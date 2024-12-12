@@ -1,0 +1,16 @@
+{
+    "params": {
+        "lfreq": 0.1,
+        "hfreq": 100,
+        "baseline": [
+            -0.3,
+            0
+        ],
+        "tmin": -0.3,
+        "tmax": 0.8
+    },
+    "split": 42,
+    "accuracy": 0.797373358348968,
+    "f1_score": 0.7946768060836502,
+    "timestamp": "RandomForestModel2024-11-15 21:14:52"
+}

@@ -1,0 +1,19 @@
+{
+    "params": {
+        "lfreq": 0.3,
+        "hfreq": 70,
+        "notch_filter": [
+            60
+        ],
+        "baseline": [
+            null,
+            null
+        ],
+        "tmin": 0,
+        "tmax": 0.6
+    },
+    "split": 42,
+    "accuracy": 0.8672897196261682,
+    "f1_score": 0.8677839851024208,
+    "timestamp": "RandomForestModel2024-11-15 21:13:49"
+}

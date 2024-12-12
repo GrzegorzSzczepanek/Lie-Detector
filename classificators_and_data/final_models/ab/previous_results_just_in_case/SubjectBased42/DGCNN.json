@@ -1,0 +1,21 @@
+{
+    "accuracy": 0.9325842696629213,
+    "f1_score": 0.9340659340659341,
+    "confusion_matrix": [
+        [
+            243,
+            24
+        ],
+        [
+            12,
+            255
+        ]
+    ],
+    "metadata": {
+        "person": "AB",
+        "model": "DGCNN",
+        "additional_info": "najlepszy dla podziału na fale (73% accuracy)",
+        "split_strategy": "SubjectBased42",
+        "timestamp": "2024-11-01 15:32:06.875471"
+    }
+}

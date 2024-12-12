@@ -1,0 +1,29 @@
+1726652026	pròba generalna
+1726696667	final attempt with raw EEG
+1726912350	test z PSD
+1727074925	test z mV
+1727076929	test z PSD i mV
+1727647600	debug
+1727648318	band differential entropy
+1727648995	band differential entropy 2
+1727677598	band differential entropy 3
+1727678135	band differential entropy 4
+1727719185	test po zmianach czy działa przed odpaleniem na całą noc
+1727728768	test CUDA
+1727728951	test CUDA 2
+1727729235	test CUDA 3
+1727733607	ostateczny test CUDA
+1727734107	ostateczny test CUDA v2
+1727734939	dobra tera na serio
+1727784205	dobra tera na serio ale z większym batchem może
+1727785399	serio: batch 128
+1727786231	single param: batch 128
+1727786868	single param: batch 64
+1727787537	single param: batch 32
+1727788732	single param: batch 8
+1727801228	single param: batch 4
+1727821216	other params
+1727854381	single param: batch size 16
+1727866326	najostateczniejszy test
+1728172083	podział fal co 5
+1728197136	podział fal co 10

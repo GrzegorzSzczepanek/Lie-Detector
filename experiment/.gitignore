@@ -1,0 +1,7 @@
+__pycache__
+venv
+dist
+.vscode
+.idea
+eeg_data
+data_testing

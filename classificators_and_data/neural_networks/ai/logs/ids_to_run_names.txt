@@ -1,0 +1,15 @@
+1730464951	DGCNN - test po refaktorze [NA WSZYSTKICH DANYCH]
+1730466911	DGCNN - test po refaktorze (z tmax 1.997) [NA WSZYSTKICH DANYCH]
+1730758943	GRU i minionki [NA WSZYSTKICH DANYCH]
+1730904997	DGCNN - na dobrych danych
+1730913143	DGCNN - na funkcji Marysi z baseline (None, None)
+1730929843	FBCNet - hopefully works now
+1730933780	FBCNet - run 1
+1730941668	FBCNet - run 2
+1731019766	FBCNet - run 3
+1731081262	FBCNet - run 6
+1731113134	FBCNet - run 4
+1731120155	FBCNet - run 7
+1731144431	FBCNet - run z num S
+1731148790	FBCNet - run z num S v2
+1731161731	LSTM na poprawnych danych

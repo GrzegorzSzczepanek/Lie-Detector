@@ -1,0 +1,36 @@
+{
+    "model": "LSTM",
+    "params": [
+        {
+            "name": "hid_channels",
+            "type": "Model",
+            "value": 256
+        },
+        {
+            "name": "tmax",
+            "type": "Data",
+            "value": 1
+        },
+        {
+            "name": "batch_size",
+            "type": "DataLoader",
+            "value": 64
+        },
+        {
+            "name": "lr",
+            "type": "Trainer",
+            "value": 0.001
+        },
+        {
+            "name": "max_epochs",
+            "type": "Fit",
+            "value": 500
+        }
+    ],
+    "run_counter": 9,
+    "run_id": "1730563041",
+    "run_name": "LSTM - bez BDE",
+    "test_accuracy": 0.530643880367279,
+    "test_loss": 6.678463935852051,
+    "timestamp": "2024-11-02T18:16:32.761201"
+}

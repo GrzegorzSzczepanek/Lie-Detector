@@ -1,0 +1,18 @@
+{
+    "batch_size": 4,
+    "device": "GPU",
+    "model": "DGCNN",
+    "params": {
+        "hid_channels": 32,
+        "lr": 1e-05,
+        "max_epochs": 500,
+        "num_layers": 2
+    },
+    "run_counter": 11,
+    "run_id": "1727734939",
+    "run_name": "dobra tera na serio",
+    "test_accuracy": 0.6214689016342163,
+    "test_loss": 0.6695662140846252,
+    "tested_param": "hid_channels",
+    "timestamp": "2024-10-01T09:03:20.405268"
+}

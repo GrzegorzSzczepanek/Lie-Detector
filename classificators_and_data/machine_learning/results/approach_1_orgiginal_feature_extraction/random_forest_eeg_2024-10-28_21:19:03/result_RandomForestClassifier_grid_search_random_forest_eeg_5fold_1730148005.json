@@ -1,0 +1,328 @@
+{
+    "best_params": {
+        "classifier__bootstrap": false,
+        "classifier__class_weight": "balanced",
+        "classifier__max_depth": 20,
+        "classifier__max_features": "sqrt",
+        "classifier__min_samples_split": 5,
+        "classifier__n_estimators": 200
+    },
+    "best_score_cv": 0.743873473917869,
+    "test_score": 0.7349624060150376,
+    "cv_results": {
+        "mean_fit_time": "[18.38021526 20.35140247 20.20177422 22.3937851  21.92035122 26.81860061\n 29.17587538 32.6739182  28.13634562 30.06001658 28.6473804  30.54019256\n 28.57987032 30.81138248 29.55502663 31.50840197 31.54228363 36.66061435\n 33.351052   36.67443633 32.55695314 36.54844332 32.82467542 35.26104617\n 33.31206517 35.9986043  30.59270682 36.76810741 35.33552194 34.83070998\n 31.26848149 33.91888456]",
+        "std_fit_time": "[0.15206083 0.97374135 0.15934741 0.4536228  1.7207779  0.21581262\n 2.78765113 0.305249   0.13684118 0.17573812 0.10588396 0.27418005\n 0.15360794 0.26450677 0.38913054 0.12174557 0.82090308 0.74157451\n 0.2099893  0.82677179 0.2114956  0.39990827 1.26198618 0.19224612\n 0.62692305 2.42408901 0.12318086 2.13649655 1.9356744  0.39581907\n 0.52929007 0.28620745]",
+        "mean_score_time": "[4.31155086 4.40888233 4.34359479 4.72851629 5.09950519 6.49897084\n 6.45302906 6.68216896 6.22788901 6.59887624 6.62530241 6.46720634\n 6.49008651 6.84631715 6.71142206 6.45807962 7.74930844 7.26714287\n 7.21212311 6.78681107 6.59985118 6.85099163 6.61467991 6.62078738\n 7.09535861 6.74882865 6.19482718 6.53002462 6.50517964 6.574018\n 6.34177732 6.11612854]",
+        "std_score_time": "[0.11275432 0.11291596 0.11024168 0.21439058 0.62142672 0.14655541\n 0.08088025 0.01476037 0.19547348 0.18574632 0.2180573  0.42318594\n 0.14539111 0.20529673 0.22796202 0.13750696 0.98117514 0.4305381\n 0.30520196 0.36613376 0.49812678 0.12809686 0.20318751 0.22271436\n 0.61899474 0.52866998 0.29517198 0.49544244 0.16037331 0.0920544\n 0.10252398 0.19318989]",
+        "param_classifier__bootstrap": "[True True True True True True True True True True True True True True\n True True False False False False False False False False False False\n False False False False False False]",
+        "param_classifier__class_weight": "[None None None None None None None None 'balanced' 'balanced' 'balanced'\n 'balanced' 'balanced' 'balanced' 'balanced' 'balanced' None None None\n None None None None None 'balanced' 'balanced' 'balanced' 'balanced'\n 'balanced' 'balanced' 'balanced' 'balanced']",
+        "param_classifier__max_depth": "[20 20 20 20 30 30 30 30 20 20 20 20 30 30 30 30 20 20 20 20 30 30 30 30\n 20 20 20 20 30 30 30 30]",
+        "param_classifier__max_features": "['sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt'\n 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt'\n 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt' 'sqrt'\n 'sqrt' 'sqrt']",
+        "param_classifier__min_samples_split": "[2 2 5 5 2 2 5 5 2 2 5 5 2 2 5 5 2 2 5 5 2 2 5 5 2 2 5 5 2 2 5 5]",
+        "param_classifier__n_estimators": "[200 300 200 300 200 300 200 300 200 300 200 300 200 300 200 300 200 300\n 200 300 200 300 200 300 200 300 200 300 200 300 200 300]",
+        "params": [
+            {
+                "classifier__bootstrap": true,
+                "classifier__class_weight": null,
+                "classifier__max_depth": 20,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 2,
+                "classifier__n_estimators": 200
+            },
+            {
+                "classifier__bootstrap": true,
+                "classifier__class_weight": null,
+                "classifier__max_depth": 20,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 2,
+                "classifier__n_estimators": 300
+            },
+            {
+                "classifier__bootstrap": true,
+                "classifier__class_weight": null,
+                "classifier__max_depth": 20,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 5,
+                "classifier__n_estimators": 200
+            },
+            {
+                "classifier__bootstrap": true,
+                "classifier__class_weight": null,
+                "classifier__max_depth": 20,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 5,
+                "classifier__n_estimators": 300
+            },
+            {
+                "classifier__bootstrap": true,
+                "classifier__class_weight": null,
+                "classifier__max_depth": 30,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 2,
+                "classifier__n_estimators": 200
+            },
+            {
+                "classifier__bootstrap": true,
+                "classifier__class_weight": null,
+                "classifier__max_depth": 30,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 2,
+                "classifier__n_estimators": 300
+            },
+            {
+                "classifier__bootstrap": true,
+                "classifier__class_weight": null,
+                "classifier__max_depth": 30,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 5,
+                "classifier__n_estimators": 200
+            },
+            {
+                "classifier__bootstrap": true,
+                "classifier__class_weight": null,
+                "classifier__max_depth": 30,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 5,
+                "classifier__n_estimators": 300
+            },
+            {
+                "classifier__bootstrap": true,
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 20,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 2,
+                "classifier__n_estimators": 200
+            },
+            {
+                "classifier__bootstrap": true,
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 20,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 2,
+                "classifier__n_estimators": 300
+            },
+            {
+                "classifier__bootstrap": true,
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 20,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 5,
+                "classifier__n_estimators": 200
+            },
+            {
+                "classifier__bootstrap": true,
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 20,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 5,
+                "classifier__n_estimators": 300
+            },
+            {
+                "classifier__bootstrap": true,
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 30,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 2,
+                "classifier__n_estimators": 200
+            },
+            {
+                "classifier__bootstrap": true,
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 30,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 2,
+                "classifier__n_estimators": 300
+            },
+            {
+                "classifier__bootstrap": true,
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 30,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 5,
+                "classifier__n_estimators": 200
+            },
+            {
+                "classifier__bootstrap": true,
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 30,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 5,
+                "classifier__n_estimators": 300
+            },
+            {
+                "classifier__bootstrap": false,
+                "classifier__class_weight": null,
+                "classifier__max_depth": 20,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 2,
+                "classifier__n_estimators": 200
+            },
+            {
+                "classifier__bootstrap": false,
+                "classifier__class_weight": null,
+                "classifier__max_depth": 20,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 2,
+                "classifier__n_estimators": 300
+            },
+            {
+                "classifier__bootstrap": false,
+                "classifier__class_weight": null,
+                "classifier__max_depth": 20,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 5,
+                "classifier__n_estimators": 200
+            },
+            {
+                "classifier__bootstrap": false,
+                "classifier__class_weight": null,
+                "classifier__max_depth": 20,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 5,
+                "classifier__n_estimators": 300
+            },
+            {
+                "classifier__bootstrap": false,
+                "classifier__class_weight": null,
+                "classifier__max_depth": 30,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 2,
+                "classifier__n_estimators": 200
+            },
+            {
+                "classifier__bootstrap": false,
+                "classifier__class_weight": null,
+                "classifier__max_depth": 30,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 2,
+                "classifier__n_estimators": 300
+            },
+            {
+                "classifier__bootstrap": false,
+                "classifier__class_weight": null,
+                "classifier__max_depth": 30,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 5,
+                "classifier__n_estimators": 200
+            },
+            {
+                "classifier__bootstrap": false,
+                "classifier__class_weight": null,
+                "classifier__max_depth": 30,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 5,
+                "classifier__n_estimators": 300
+            },
+            {
+                "classifier__bootstrap": false,
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 20,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 2,
+                "classifier__n_estimators": 200
+            },
+            {
+                "classifier__bootstrap": false,
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 20,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 2,
+                "classifier__n_estimators": 300
+            },
+            {
+                "classifier__bootstrap": false,
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 20,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 5,
+                "classifier__n_estimators": 200
+            },
+            {
+                "classifier__bootstrap": false,
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 20,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 5,
+                "classifier__n_estimators": 300
+            },
+            {
+                "classifier__bootstrap": false,
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 30,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 2,
+                "classifier__n_estimators": 200
+            },
+            {
+                "classifier__bootstrap": false,
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 30,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 2,
+                "classifier__n_estimators": 300
+            },
+            {
+                "classifier__bootstrap": false,
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 30,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 5,
+                "classifier__n_estimators": 200
+            },
+            {
+                "classifier__bootstrap": false,
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 30,
+                "classifier__max_features": "sqrt",
+                "classifier__min_samples_split": 5,
+                "classifier__n_estimators": 300
+            }
+        ],
+        "split0_test_score": "[0.71294118 0.72235294 0.71764706 0.73647059 0.70117647 0.72235294\n 0.73176471 0.73176471 0.71529412 0.71764706 0.70352941 0.71294118\n 0.70588235 0.69647059 0.70117647 0.69882353 0.72941176 0.72\n 0.73411765 0.72941176 0.71764706 0.72       0.72235294 0.72\n 0.72705882 0.73882353 0.73411765 0.73176471 0.72       0.72705882\n 0.74117647 0.74352941]",
+        "split1_test_score": "[0.74117647 0.73411765 0.71529412 0.72470588 0.71764706 0.72470588\n 0.72235294 0.74823529 0.72       0.72705882 0.74117647 0.73411765\n 0.71058824 0.71764706 0.73411765 0.72941176 0.73647059 0.74588235\n 0.73882353 0.72941176 0.73882353 0.73176471 0.71529412 0.73411765\n 0.71294118 0.72705882 0.75294118 0.75058824 0.72235294 0.71529412\n 0.73411765 0.72705882]",
+        "split2_test_score": "[0.72       0.73411765 0.71764706 0.72470588 0.72705882 0.74117647\n 0.72235294 0.72235294 0.71058824 0.73176471 0.71764706 0.72941176\n 0.72941176 0.72941176 0.71529412 0.72470588 0.74117647 0.74352941\n 0.75058824 0.75058824 0.74823529 0.74352941 0.74117647 0.74588235\n 0.74352941 0.74823529 0.76       0.75529412 0.76705882 0.76235294\n 0.74352941 0.74823529]",
+        "split3_test_score": "[0.71764706 0.72705882 0.71058824 0.72       0.73647059 0.72941176\n 0.70117647 0.72       0.70823529 0.70588235 0.73176471 0.71529412\n 0.69411765 0.70823529 0.74588235 0.72       0.74823529 0.75058824\n 0.74823529 0.75294118 0.73647059 0.74117647 0.73647059 0.73411765\n 0.74823529 0.72705882 0.74117647 0.74823529 0.73647059 0.75058824\n 0.74117647 0.73882353]",
+        "split4_test_score": "[0.71933962 0.69575472 0.71698113 0.72641509 0.7240566  0.70283019\n 0.72169811 0.72169811 0.7240566  0.71698113 0.71462264 0.70990566\n 0.71698113 0.70990566 0.72641509 0.72169811 0.73584906 0.72877358\n 0.72641509 0.73820755 0.72641509 0.72641509 0.75       0.74528302\n 0.74528302 0.73584906 0.73113208 0.72641509 0.71933962 0.73820755\n 0.72877358 0.75      ]",
+        "mean_test_score": "[0.72222087 0.72268036 0.71563152 0.72645949 0.72128191 0.72409545\n 0.71986903 0.72881021 0.71563485 0.71986681 0.72174806 0.72033407\n 0.71139623 0.71233407 0.72457714 0.71892786 0.73822863 0.73775472\n 0.73963596 0.7401121  0.73351831 0.73257714 0.73305882 0.73588013\n 0.73540954 0.73540511 0.74387347 0.74245949 0.7330444  0.73870033\n 0.73775472 0.74152941]",
+        "std_test_score": "[0.00979368 0.01418373 0.00266439 0.00544241 0.0117406  0.01245508\n 0.01006582 0.01054477 0.00583641 0.00896777 0.01324617 0.00960416\n 0.01170774 0.01090158 0.01537581 0.01054804 0.00625001 0.01148909\n 0.00894208 0.01006932 0.01054327 0.00883986 0.01260746 0.00945357\n 0.01343488 0.00794754 0.0110189  0.01127799 0.01811632 0.01663963\n 0.00548913 0.0082151 ]",
+        "rank_test_score": "[22 21 30 18 24 20 26 17 29 27 23 25 32 31 19 28  7  8  5  4 13 16 14 10\n 11 12  1  2 15  6  8  3]",
+        "split0_train_score": "[1.         1.         0.99823426 0.99823426 1.         1.\n 0.99823426 0.99882284 1.         1.         0.99882284 0.99823426\n 1.         1.         0.99882284 0.99823426 1.         1.\n 0.99941142 0.99941142 1.         1.         1.         1.\n 1.         1.         1.         1.         1.         1.\n 1.         1.        ]",
+        "split1_train_score": "[0.99941142 0.99941142 0.99764567 0.99823426 0.99941142 0.99941142\n 0.99823426 0.99823426 0.99941142 0.99941142 0.99764567 0.99764567\n 0.99941142 0.99941142 0.99764567 0.99823426 0.99941142 0.99941142\n 0.99941142 0.99941142 0.99941142 0.99941142 0.99941142 0.99941142\n 0.99941142 0.99941142 0.99941142 0.99941142 0.99941142 0.99941142\n 0.99941142 0.99941142]",
+        "split2_train_score": "[0.99941142 0.99941142 0.99529135 0.99587993 0.99941142 0.99941142\n 0.99587993 0.99587993 0.99941142 0.99941142 0.99587993 0.99587993\n 0.99941142 0.99941142 0.99646851 0.99646851 0.99941142 0.99941142\n 0.99882284 0.99941142 0.99941142 0.99941142 0.99882284 0.99941142\n 0.99941142 0.99941142 0.99882284 0.99941142 0.99941142 0.99941142\n 0.99941142 0.99941142]",
+        "split3_train_score": "[0.99941142 0.99941142 0.99646851 0.99646851 0.99941142 0.99941142\n 0.99646851 0.99646851 0.99941142 0.99941142 0.99646851 0.99587993\n 0.99941142 0.99941142 0.99646851 0.99646851 0.99941142 0.99941142\n 0.99941142 0.99941142 0.99941142 0.99941142 0.99941142 0.99941142\n 0.99941142 0.99941142 0.99941142 0.99941142 0.99941142 0.99941142\n 0.99941142 0.99941142]",
+        "split4_train_score": "[1.         1.         0.99823529 0.99764706 1.         1.\n 0.99823529 0.99764706 1.         1.         0.99764706 0.99705882\n 1.         1.         0.99764706 0.99764706 1.         1.\n 0.99882353 0.99882353 1.         1.         0.99941176 0.99941176\n 1.         1.         0.99882353 0.99882353 1.         1.\n 0.99941176 0.99941176]",
+        "mean_train_score": "[0.99964685 0.99964685 0.99717502 0.9972928  0.99964685 0.99964685\n 0.99741045 0.99741052 0.99964685 0.99964685 0.9972928  0.99693972\n 0.99964685 0.99964685 0.99741052 0.99741052 0.99964685 0.99964685\n 0.99917612 0.99929384 0.99964685 0.99964685 0.99941149 0.9995292\n 0.99964685 0.99964685 0.99929384 0.99941156 0.99964685 0.99964685\n 0.9995292  0.9995292 ]",
+        "std_train_score": "[0.00028834 0.00028834 0.00114149 0.00095643 0.00028834 0.00028834\n 0.00102639 0.00109172 0.00028834 0.00028834 0.00102632 0.00094177\n 0.00028834 0.00028834 0.00088098 0.00079847 0.00028834 0.00028834\n 0.00028818 0.00023516 0.00028834 0.00028834 0.00037225 0.0002354\n 0.00028834 0.00028834 0.00044031 0.00037203 0.00028834 0.00028834\n 0.0002354  0.0002354 ]"
+    },
+    "model_name": "RandomForestClassifier",
+    "search_type": "grid_search_random_forest_eeg",
+    "cv_folds": 5,
+    "date": "2024-10-28_21:40:05",
+    "classification_report": {
+        "0": {
+            "precision": 0.7266187050359713,
+            "recall": 0.7565543071161048,
+            "f1-score": 0.7412844036697248,
+            "support": 267.0
+        },
+        "1": {
+            "precision": 0.7440944881889764,
+            "recall": 0.7132075471698113,
+            "f1-score": 0.7283236994219653,
+            "support": 265.0
+        },
+        "accuracy": 0.7349624060150376,
+        "macro avg": {
+            "precision": 0.7353565966124738,
+            "recall": 0.734880927142958,
+            "f1-score": 0.734804051545845,
+            "support": 532.0
+        },
+        "weighted avg": {
+            "precision": 0.7353237473960209,
+            "recall": 0.7349624060150376,
+            "f1-score": 0.7348284137718748,
+            "support": 532.0
+        }
+    }
+}

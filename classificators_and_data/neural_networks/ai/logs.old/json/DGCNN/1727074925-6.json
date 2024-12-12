@@ -1,0 +1,17 @@
+{
+    "batch_size": 16,
+    "device": "CPU",
+    "model": "DGCNN",
+    "params": {
+        "hid_channels": 32,
+        "lr": 0.001,
+        "max_epochs": 200,
+        "num_layers": 6
+    },
+    "run_counter": 6,
+    "run_id": "1727074925",
+    "run_name": "test z mV",
+    "test_accuracy": 0.5103577971458435,
+    "test_loss": 0.6996001601219177,
+    "timestamp": "2024-09-23T09:20:35.325204"
+}

@@ -1,0 +1,18 @@
+{
+    "batch_size": 16,
+    "device": "GPU",
+    "model": "DGCNN",
+    "params": {
+        "hid_channels": 32,
+        "lr": 1e-05,
+        "max_epochs": 500,
+        "num_layers": 3
+    },
+    "run_counter": 3,
+    "run_id": "1727821216",
+    "run_name": "other params",
+    "test_accuracy": 0.5894538760185242,
+    "test_loss": 0.6651119589805603,
+    "tested_param": "num_layers",
+    "timestamp": "2024-10-02T00:56:07.361992"
+}

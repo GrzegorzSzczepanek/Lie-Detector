@@ -1,0 +1,17 @@
+{
+    "batch_size": 128,
+    "device": "CPU",
+    "model": "DGCNN",
+    "params": {
+        "hid_channels": 32,
+        "lr": 0.01,
+        "max_epochs": 200,
+        "num_layers": 2
+    },
+    "run_counter": 107,
+    "run_id": "1727648995",
+    "run_name": "band differential entropy 2",
+    "test_accuracy": 0.6798493266105652,
+    "test_loss": 0.5597610473632812,
+    "timestamp": "2024-09-30T04:39:42.506778"
+}

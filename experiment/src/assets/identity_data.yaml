@@ -1,0 +1,31 @@
+surnames:
+  - Wójcik
+  - Kowalik
+  - Zając
+  - Kaczmarek
+
+female_names:
+  - Julia
+  - Wiktoria
+  - Natalia
+  - Aleksandra
+  - Oliwia
+  - Zuzanna
+
+male_names:
+  - Jakub
+  - Kacper
+  - Mateusz
+  - Michał
+  - Szymon
+  - Bartosz
+
+hometowns:
+  - Kraków
+  - Wrocław
+  - Łódź
+
+birth_dates:
+  - 11 lipca
+  - 30 czerwca
+  - 12 stycznia

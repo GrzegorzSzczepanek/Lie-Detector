@@ -1,0 +1,17 @@
+{
+    "batch_size": 4,
+    "device": "CPU",
+    "model": "DGCNN",
+    "params": {
+        "hid_channels": 32,
+        "lr": 1e-05,
+        "max_epochs": 500,
+        "num_layers": 1
+    },
+    "run_counter": 1,
+    "run_id": "1727719185",
+    "run_name": "test po zmianach czy działa przed odpaleniem na całą noc",
+    "test_accuracy": 0.6516007781028748,
+    "test_loss": 0.7009199261665344,
+    "timestamp": "2024-09-30T20:32:27.524394"
+}

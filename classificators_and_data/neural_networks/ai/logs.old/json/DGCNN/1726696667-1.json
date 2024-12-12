@@ -1,0 +1,17 @@
+{
+    "batch_size": 16,
+    "device": "CPU",
+    "model": "DGCNN",
+    "params": {
+        "hid_channels": 32,
+        "lr": 0.001,
+        "max_epochs": 200,
+        "num_layers": 1
+    },
+    "run_counter": 1,
+    "run_id": "1726696667",
+    "run_name": "final attempt with raw EEG",
+    "test_accuracy": 0.45951035618782043,
+    "test_loss": 0.7753095626831055,
+    "timestamp": "2024-09-19T00:03:05.362539"
+}

@@ -1,0 +1,62 @@
+{
+    "model": "GRU",
+    "params": [
+        {
+            "name": "hid_channels",
+            "type": "Model",
+            "value": 16
+        },
+        {
+            "name": "tmax",
+            "type": "Data",
+            "value": 1
+        },
+        {
+            "name": "band_to_frequency_range",
+            "type": "Dataset",
+            "value": {
+                "alpha": [
+                    8,
+                    14
+                ],
+                "beta": [
+                    14,
+                    31
+                ],
+                "delta": [
+                    1,
+                    4
+                ],
+                "gamma": [
+                    31,
+                    49
+                ],
+                "theta": [
+                    4,
+                    8
+                ]
+            }
+        },
+        {
+            "name": "batch_size",
+            "type": "DataLoader",
+            "value": 64
+        },
+        {
+            "name": "lr",
+            "type": "Trainer",
+            "value": 0.001
+        },
+        {
+            "name": "max_epochs",
+            "type": "Fit",
+            "value": 500
+        }
+    ],
+    "run_counter": 6,
+    "run_id": "1730758943",
+    "run_name": "GRU i minionki [NA WSZYSTKICH DANYCH]",
+    "test_accuracy": 0.6152055859565735,
+    "test_loss": 0.635068416595459,
+    "timestamp": "2024-11-05T01:26:20.488422"
+}

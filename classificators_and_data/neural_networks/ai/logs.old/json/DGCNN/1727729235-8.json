@@ -1,0 +1,17 @@
+{
+    "batch_size": 64,
+    "device": "GPU",
+    "model": "DGCNN",
+    "params": {
+        "hid_channels": 32,
+        "lr": 1e-05,
+        "max_epochs": 500,
+        "num_layers": 8
+    },
+    "run_counter": 8,
+    "run_id": "1727729235",
+    "run_name": "test CUDA 3",
+    "test_accuracy": 0.5800376534461975,
+    "test_loss": 0.677295446395874,
+    "timestamp": "2024-09-30T23:12:26.437310"
+}

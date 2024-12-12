@@ -1,0 +1,17 @@
+{
+    "batch_size": 16,
+    "device": "CPU",
+    "model": "DGCNN",
+    "params": {
+        "hid_channels": 32,
+        "lr": 0.001,
+        "max_epochs": 200,
+        "num_layers": 50
+    },
+    "run_counter": 14,
+    "run_id": "1726912350",
+    "run_name": "test z PSD",
+    "test_accuracy": 0.4821092188358307,
+    "test_loss": 0.6959564089775085,
+    "timestamp": "2024-09-21T14:16:24.492096"
+}

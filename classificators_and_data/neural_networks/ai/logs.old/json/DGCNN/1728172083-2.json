@@ -1,0 +1,16 @@
+{
+    "batch_size": 16,
+    "model": "DGCNN",
+    "params": {
+        "hid_channels": 512,
+        "lr": 0.001,
+        "max_epochs": 500,
+        "num_layers": 2
+    },
+    "run_counter": 2,
+    "run_id": "1728172083",
+    "run_name": "podział fal co 5",
+    "test_accuracy": 0.6365348696708679,
+    "test_loss": 0.6162025928497314,
+    "timestamp": "2024-10-06T02:19:58.217019"
+}

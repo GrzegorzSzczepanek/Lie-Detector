@@ -1,0 +1,82 @@
+{
+    "model": "FBCNet",
+    "params": [
+        {
+            "name": "lr",
+            "type": "Trainer",
+            "value": 1
+        },
+        {
+            "name": "tmax",
+            "type": "Data",
+            "value": 1
+        },
+        {
+            "name": "freqs",
+            "type": "Data",
+            "value": [
+                [
+                    1,
+                    5
+                ],
+                [
+                    5,
+                    10
+                ],
+                [
+                    10,
+                    15
+                ],
+                [
+                    15,
+                    20
+                ],
+                [
+                    20,
+                    25
+                ],
+                [
+                    25,
+                    30
+                ],
+                [
+                    30,
+                    35
+                ],
+                [
+                    35,
+                    40
+                ],
+                [
+                    40,
+                    45
+                ],
+                [
+                    45,
+                    50
+                ]
+            ]
+        },
+        {
+            "name": "batch_size",
+            "type": "DataLoader",
+            "value": 64
+        },
+        {
+            "name": "num_S",
+            "type": "Model",
+            "value": 32
+        },
+        {
+            "name": "max_epochs",
+            "type": "Fit",
+            "value": 500
+        }
+    ],
+    "run_counter": 10,
+    "run_id": "1730933780",
+    "run_name": "FBCNet - run 1",
+    "test_accuracy": 0.5160075426101685,
+    "test_loss": 9.933612823486328,
+    "timestamp": "2024-11-07T01:49:25.621011"
+}

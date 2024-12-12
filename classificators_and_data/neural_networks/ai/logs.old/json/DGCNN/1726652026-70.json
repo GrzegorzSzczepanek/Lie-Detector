@@ -1,0 +1,17 @@
+{
+    "batch_size": 64,
+    "device": "CPU",
+    "model": "DGCNN",
+    "params": {
+        "hid_channels": 32,
+        "lr": 0.001,
+        "max_epochs": 200,
+        "num_layers": 6
+    },
+    "run_counter": 70,
+    "run_id": "1726652026",
+    "run_name": "pròba generalna",
+    "test_accuracy": 0.48775893449783325,
+    "test_loss": 0.6912347674369812,
+    "timestamp": "2024-09-18T17:27:26.693992"
+}

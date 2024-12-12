@@ -1,0 +1,62 @@
+{
+    "model": "LSTM",
+    "params": [
+        {
+            "name": "batch_size",
+            "type": "DataLoader",
+            "value": 128
+        },
+        {
+            "name": "tmax",
+            "type": "Data",
+            "value": 1
+        },
+        {
+            "name": "band_to_frequency_range",
+            "type": "Dataset",
+            "value": {
+                "alpha": [
+                    8,
+                    14
+                ],
+                "beta": [
+                    14,
+                    31
+                ],
+                "delta": [
+                    1,
+                    4
+                ],
+                "gamma": [
+                    31,
+                    49
+                ],
+                "theta": [
+                    4,
+                    8
+                ]
+            }
+        },
+        {
+            "name": "hid_channels",
+            "type": "Model",
+            "value": 64
+        },
+        {
+            "name": "lr",
+            "type": "Trainer",
+            "value": 0.001
+        },
+        {
+            "name": "max_epochs",
+            "type": "Fit",
+            "value": 500
+        }
+    ],
+    "run_counter": 5,
+    "run_id": "1730506039",
+    "run_name": "LSTM",
+    "test_accuracy": 0.7044220566749573,
+    "test_loss": 0.5726224780082703,
+    "timestamp": "2024-11-02T01:41:15.173289"
+}

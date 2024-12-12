@@ -1,0 +1,156 @@
+{
+    "best_params": {
+        "classifier__metric": "manhattan",
+        "classifier__n_neighbors": 21,
+        "classifier__weights": "uniform"
+    },
+    "best_score_cv": 0.5668590455049944,
+    "test_score": 0.5357142857142857,
+    "cv_results": {
+        "mean_fit_time": "[16.4250309  16.16180797 15.96657882 16.54509478 16.96831908 16.48186269\n 16.3708128  16.24788623 16.51284599 16.66129823 16.62068768 19.94745255\n 22.02050357 25.05692234 22.56097689 21.04435005 20.49482193 17.83447676]",
+        "std_fit_time": "[0.21506579 0.27448092 0.0971177  0.44782512 0.19355849 0.15070464\n 0.16023135 0.09263288 0.09628578 0.1220385  0.0421383  1.59318566\n 1.52792409 0.12417754 1.78344797 0.20579331 0.16955356 4.27235202]",
+        "mean_score_time": "[4.38097816 4.08058162 3.75373316 4.00748024 4.15565567 4.11101837\n 4.15924454 4.13395476 4.19500422 4.22230806 4.22036438 5.42479115\n 5.94739408 6.24245334 5.73962626 5.4827898  6.293471   4.73129063]",
+        "std_score_time": "[0.07879435 0.26542102 0.02204047 0.20021006 0.13364864 0.05366511\n 0.03217549 0.03553201 0.02594917 0.04480177 0.05797918 0.58987539\n 0.17755925 0.21390151 0.52057733 0.10771272 0.41170893 1.80505529]",
+        "param_classifier__metric": "['euclidean' 'euclidean' 'euclidean' 'euclidean' 'euclidean' 'euclidean'\n 'manhattan' 'manhattan' 'manhattan' 'manhattan' 'manhattan' 'manhattan'\n 'chebyshev' 'chebyshev' 'chebyshev' 'chebyshev' 'chebyshev' 'chebyshev']",
+        "param_classifier__n_neighbors": "[21 21 25 25 31 31 21 21 25 25 31 31 21 21 25 25 31 31]",
+        "param_classifier__weights": "['uniform' 'distance' 'uniform' 'distance' 'uniform' 'distance' 'uniform'\n 'distance' 'uniform' 'distance' 'uniform' 'distance' 'uniform' 'distance'\n 'uniform' 'distance' 'uniform' 'distance']",
+        "params": [
+            {
+                "classifier__metric": "euclidean",
+                "classifier__n_neighbors": 21,
+                "classifier__weights": "uniform"
+            },
+            {
+                "classifier__metric": "euclidean",
+                "classifier__n_neighbors": 21,
+                "classifier__weights": "distance"
+            },
+            {
+                "classifier__metric": "euclidean",
+                "classifier__n_neighbors": 25,
+                "classifier__weights": "uniform"
+            },
+            {
+                "classifier__metric": "euclidean",
+                "classifier__n_neighbors": 25,
+                "classifier__weights": "distance"
+            },
+            {
+                "classifier__metric": "euclidean",
+                "classifier__n_neighbors": 31,
+                "classifier__weights": "uniform"
+            },
+            {
+                "classifier__metric": "euclidean",
+                "classifier__n_neighbors": 31,
+                "classifier__weights": "distance"
+            },
+            {
+                "classifier__metric": "manhattan",
+                "classifier__n_neighbors": 21,
+                "classifier__weights": "uniform"
+            },
+            {
+                "classifier__metric": "manhattan",
+                "classifier__n_neighbors": 21,
+                "classifier__weights": "distance"
+            },
+            {
+                "classifier__metric": "manhattan",
+                "classifier__n_neighbors": 25,
+                "classifier__weights": "uniform"
+            },
+            {
+                "classifier__metric": "manhattan",
+                "classifier__n_neighbors": 25,
+                "classifier__weights": "distance"
+            },
+            {
+                "classifier__metric": "manhattan",
+                "classifier__n_neighbors": 31,
+                "classifier__weights": "uniform"
+            },
+            {
+                "classifier__metric": "manhattan",
+                "classifier__n_neighbors": 31,
+                "classifier__weights": "distance"
+            },
+            {
+                "classifier__metric": "chebyshev",
+                "classifier__n_neighbors": 21,
+                "classifier__weights": "uniform"
+            },
+            {
+                "classifier__metric": "chebyshev",
+                "classifier__n_neighbors": 21,
+                "classifier__weights": "distance"
+            },
+            {
+                "classifier__metric": "chebyshev",
+                "classifier__n_neighbors": 25,
+                "classifier__weights": "uniform"
+            },
+            {
+                "classifier__metric": "chebyshev",
+                "classifier__n_neighbors": 25,
+                "classifier__weights": "distance"
+            },
+            {
+                "classifier__metric": "chebyshev",
+                "classifier__n_neighbors": 31,
+                "classifier__weights": "uniform"
+            },
+            {
+                "classifier__metric": "chebyshev",
+                "classifier__n_neighbors": 31,
+                "classifier__weights": "distance"
+            }
+        ],
+        "split0_test_score": "[0.58588235 0.58352941 0.57411765 0.57176471 0.56705882 0.55058824\n 0.57882353 0.57176471 0.58588235 0.58823529 0.57647059 0.56\n 0.50352941 0.51294118 0.50588235 0.50117647 0.51294118 0.50823529]",
+        "split1_test_score": "[0.57411765 0.57411765 0.57411765 0.57647059 0.55058824 0.55058824\n 0.57647059 0.57411765 0.57647059 0.58352941 0.57411765 0.58117647\n 0.50117647 0.50352941 0.49882353 0.49882353 0.51058824 0.50823529]",
+        "split2_test_score": "[0.53176471 0.53882353 0.52941176 0.54117647 0.52941176 0.52705882\n 0.57176471 0.57176471 0.55294118 0.55764706 0.56       0.56235294\n 0.51294118 0.51529412 0.51529412 0.51058824 0.51529412 0.51764706]",
+        "split3_test_score": "[0.53647059 0.54352941 0.52705882 0.53176471 0.51294118 0.51529412\n 0.53176471 0.54352941 0.53411765 0.54117647 0.52705882 0.52941176\n 0.56235294 0.57176471 0.55058824 0.56       0.54117647 0.56      ]",
+        "split4_test_score": "[0.54245283 0.5495283  0.54481132 0.54716981 0.54245283 0.54245283\n 0.5754717  0.56367925 0.56603774 0.55896226 0.5495283  0.54009434\n 0.54245283 0.53537736 0.54481132 0.54716981 0.52830189 0.52830189]",
+        "mean_test_score": "[0.55413762 0.55790566 0.54990344 0.55366926 0.54049057 0.53719645\n 0.56685905 0.56497114 0.5630899  0.5659101  0.55743507 0.5546071\n 0.52449057 0.52778135 0.52307991 0.52355161 0.52166038 0.52448391]",
+        "std_test_score": "[0.02170776 0.01766573 0.02068995 0.01746693 0.01840323 0.01391972\n 0.01769399 0.01129053 0.01816379 0.01753372 0.01806915 0.01811319\n 0.02396876 0.02431688 0.02085046 0.02516537 0.01152505 0.01923927]",
+        "rank_test_score": "[ 8  5 10  9 11 12  1  3  4  2  6  7 14 13 17 16 18 15]",
+        "split0_train_score": "[0.62919364 1.         0.62625074 1.         0.61330194 1.\n 0.63507946 1.         0.62036492 1.         0.60565038 1.\n 0.61035903 1.         0.60211889 1.         0.58975868 1.        ]",
+        "split1_train_score": "[0.6209535  0.99941142 0.62213067 0.99941142 0.61094762 0.99941142\n 0.63743378 1.         0.63272513 1.         0.63331371 1.\n 0.60682755 1.         0.60447322 1.         0.60035315 1.        ]",
+        "split2_train_score": "[0.62330783 0.99941142 0.62683932 0.99941142 0.61565627 0.99941142\n 0.63154797 1.         0.62507357 1.         0.6115362  1.\n 0.62566215 1.         0.6115362  1.         0.59211301 1.        ]",
+        "split3_train_score": "[0.62213067 0.99941142 0.60977045 0.99941142 0.58505003 0.99941142\n 0.6274279  1.         0.61565627 1.         0.59976457 1.\n 0.60800471 1.         0.59446733 1.         0.58446145 1.        ]",
+        "split4_train_score": "[0.63352941 1.         0.62882353 1.         0.60764706 1.\n 0.63470588 1.         0.62764706 1.         0.62823529 1.\n 0.60529412 1.         0.59941176 1.         0.59       1.        ]",
+        "mean_train_score": "[0.62582301 0.99964685 0.62276294 0.99964685 0.60652058 0.99964685\n 0.633239   1.         0.62429339 1.         0.61570003 1.\n 0.61122951 1.         0.60240148 1.         0.59133726 1.        ]",
+        "std_train_score": "[0.00478375 0.00028834 0.00685152 0.00028834 0.01105712 0.00028834\n 0.00345727 0.         0.00588188 0.         0.01295875 0.\n 0.00740357 0.         0.00565162 0.         0.00516614 0.        ]"
+    },
+    "model_name": "KNeighborsClassifier",
+    "search_type": "grid_search_knn_eeg",
+    "cv_folds": 5,
+    "date": "2024-11-17_17:51:56",
+    "classification_report": {
+        "0": {
+            "precision": 0.5471698113207547,
+            "recall": 0.4344569288389513,
+            "f1-score": 0.48434237995824636,
+            "support": 267.0
+        },
+        "1": {
+            "precision": 0.528125,
+            "recall": 0.6377358490566037,
+            "f1-score": 0.5777777777777777,
+            "support": 265.0
+        },
+        "accuracy": 0.5357142857142857,
+        "macro avg": {
+            "precision": 0.5376474056603773,
+            "recall": 0.5360963889477776,
+            "f1-score": 0.531060078868012,
+            "support": 532.0
+        },
+        "weighted avg": {
+            "precision": 0.5376832041778976,
+            "recall": 0.5357142857142857,
+            "f1-score": 0.5308844484209828,
+            "support": 532.0
+        }
+    }
+}
