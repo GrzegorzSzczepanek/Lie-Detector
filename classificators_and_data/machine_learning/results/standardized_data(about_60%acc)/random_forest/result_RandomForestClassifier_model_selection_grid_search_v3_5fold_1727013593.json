@@ -1,0 +1,107 @@
+{
+    "best_params": {
+        "model__max_depth": 20,
+        "model__min_samples_split": 5,
+        "model__n_estimators": 200
+    },
+    "best_score_cv": 0.5630788013318535,
+    "test_score": 0.6015037593984962,
+    "cv_results": {
+        "mean_fit_time": [
+            3.055390405654907,
+            5.684756803512573,
+            9.63708004951477
+        ],
+        "std_fit_time": [
+            0.08944954775951415,
+            0.24781383708825533,
+            0.3943243382860205
+        ],
+        "mean_score_time": [
+            0.016297006607055665,
+            0.016530323028564452,
+            0.016077327728271484
+        ],
+        "std_score_time": [
+            0.00479356884316473,
+            0.0040407333599942336,
+            0.003076642393442278
+        ],
+        "param_model__max_depth": [
+            20,
+            20,
+            20
+        ],
+        "param_model__min_samples_split": [
+            5,
+            5,
+            5
+        ],
+        "param_model__n_estimators": [
+            50,
+            100,
+            200
+        ],
+        "params": [
+            {
+                "model__max_depth": 20,
+                "model__min_samples_split": 5,
+                "model__n_estimators": 50
+            },
+            {
+                "model__max_depth": 20,
+                "model__min_samples_split": 5,
+                "model__n_estimators": 100
+            },
+            {
+                "model__max_depth": 20,
+                "model__min_samples_split": 5,
+                "model__n_estimators": 200
+            }
+        ],
+        "split0_test_score": [
+            0.56,
+            0.5505882352941176,
+            0.5435294117647059
+        ],
+        "split1_test_score": [
+            0.5741176470588235,
+            0.5764705882352941,
+            0.6258823529411764
+        ],
+        "split2_test_score": [
+            0.5411764705882353,
+            0.5552941176470588,
+            0.5529411764705883
+        ],
+        "split3_test_score": [
+            0.5341176470588235,
+            0.548235294117647,
+            0.5505882352941176
+        ],
+        "split4_test_score": [
+            0.5424528301886793,
+            0.5589622641509434,
+            0.5424528301886793
+        ],
+        "mean_test_score": [
+            0.5503729189789123,
+            0.5579100998890122,
+            0.5630788013318535
+        ],
+        "std_test_score": [
+            0.014615260074450274,
+            0.009996536482566123,
+            0.031656535156465965
+        ],
+        "rank_test_score": [
+            3,
+            2,
+            1
+        ]
+    },
+    "model_name": "RandomForestClassifier",
+    "search_type": "model_selection_grid_search_v3",
+    "cv_folds": 5,
+    "date": "2024-09-22 15:59:53.386915"
+}

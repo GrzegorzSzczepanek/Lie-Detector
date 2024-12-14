@@ -1,0 +1,33 @@
+{
+    "best_params": {
+        "knn__weights": "uniform"
+    },
+    "best_score_cv": 0.520237513873474,
+    "test_score": 0.5281954887218046,
+    "cv_results": {
+        "mean_fit_time": "[0.1084424  0.11280303]",
+        "std_fit_time": "[0.02685431 0.02984103]",
+        "mean_score_time": "[0.10842676 0.08945913]",
+        "std_score_time": "[0.02315367 0.03661141]",
+        "param_knn__weights": "['uniform' 'distance']",
+        "params": [
+            {
+                "knn__weights": "uniform"
+            },
+            {
+                "knn__weights": "distance"
+            }
+        ],
+        "split0_test_score": "[0.50823529 0.50823529]",
+        "split1_test_score": "[0.53176471 0.53176471]",
+        "split2_test_score": "[0.55058824 0.55058824]",
+        "split3_test_score": "[0.50588235 0.50588235]",
+        "split4_test_score": "[0.50471698 0.50471698]",
+        "mean_test_score": "[0.52023751 0.52023751]",
+        "std_test_score": "[0.01813865 0.01813865]",
+        "rank_test_score": "[1 1]"
+    },
+    "model_name": "KNeighborsClassifier",
+    "search_type": "one_parameter_at_a_time",
+    "date": "2024-09-23 20:59:54.206611"
+}
