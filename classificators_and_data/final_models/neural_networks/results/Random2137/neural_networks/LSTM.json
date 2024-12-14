@@ -1,0 +1,21 @@
+{
+    "accuracy": 0.6854990583804144,
+    "f1_score": 0.6819047619047619,
+    "confusion_matrix": [
+        [
+            185,
+            82
+        ],
+        [
+            85,
+            179
+        ]
+    ],
+    "metadata": {
+        "person": "AB",
+        "model": "LSTM",
+        "additional_info": "65%",
+        "split_strategy": "Random2137",
+        "timestamp": "2024-11-09 17:19:58.294770"
+    }
+}

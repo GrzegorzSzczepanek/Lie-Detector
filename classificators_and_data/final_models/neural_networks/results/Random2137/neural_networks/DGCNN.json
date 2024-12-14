@@ -1,0 +1,21 @@
+{
+    "accuracy": 0.8436911487758946,
+    "f1_score": 0.845437616387337,
+    "confusion_matrix": [
+        [
+            221,
+            46
+        ],
+        [
+            37,
+            227
+        ]
+    ],
+    "metadata": {
+        "person": "AB",
+        "model": "DGCNN",
+        "additional_info": "88%",
+        "split_strategy": "Random2137",
+        "timestamp": "2024-11-09 17:00:24.020486"
+    }
+}

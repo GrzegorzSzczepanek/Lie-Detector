@@ -1,0 +1,21 @@
+{
+    "accuracy": 0.6779026217228464,
+    "f1_score": 0.749271137026239,
+    "confusion_matrix": [
+        [
+            105,
+            164
+        ],
+        [
+            8,
+            257
+        ]
+    ],
+    "metadata": {
+        "person": "AB",
+        "model": "FBCNet",
+        "additional_info": "79%",
+        "split_strategy": "Random42",
+        "timestamp": "2024-11-11 15:22:15.731345"
+    }
+}
