@@ -11,7 +11,7 @@ from torcheeg.models import DGCNN
 
 CONFIG_TO_RUN: RunConfig = {
     "model_name": "DGCNN",
-    "run_name": "DGCNN - test po refaktorze (z tmax 1.997) [NA WSZYSTKICH DANYCH]",
+    "run_name": "DGCNN - test after refactor (with tmax 1.997) [ON ALL DATA]",
     "dataset_factory": lambda X, y, **kwargs: BDEDataset(X, y, **kwargs),
     "model_factory": lambda **kwargs: DGCNN(
         in_channels=5,

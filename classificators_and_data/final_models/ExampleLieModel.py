@@ -32,5 +32,5 @@ class ExampleLieModel(LieModel):
         return {
             "person": "ms",
             "model": "example",
-            "additional_info": "To jest przyklad"
+            "additional_info": "This is an example"
         }

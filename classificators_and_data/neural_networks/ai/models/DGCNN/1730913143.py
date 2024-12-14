@@ -11,7 +11,7 @@ from torcheeg.models import DGCNN
 
 CONFIG_TO_RUN: RunConfig = {
     "model_name": "DGCNN",
-    "run_name": "DGCNN - na funkcji Marysi z baseline (None, None)",
+    "run_name": "DGCNN - using data_procesing module function z baseline (None, None)",
     "dataset_factory": lambda X, y, **kwargs: BDEDataset(X, y, **kwargs),
     "model_factory": lambda **kwargs: DGCNN(
         in_channels=5,

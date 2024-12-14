@@ -11,7 +11,7 @@ from torcheeg.models import GRU
 
 CONFIG_TO_RUN: RunConfig = {
     "model_name": "GRU",
-    "run_name": "GRU i minionki [NA WSZYSTKICH DANYCH]",
+    "run_name": "GRU [ON ALL DATA]",
     "dataset_factory": lambda X, y, **kwargs: BDEDataset(X, y, **kwargs),
     "model_factory": lambda **kwargs: GRU(
         num_electrodes=NUM_OF_ELECTRODES, num_classes=NUM_OF_CLASSES, **kwargs
