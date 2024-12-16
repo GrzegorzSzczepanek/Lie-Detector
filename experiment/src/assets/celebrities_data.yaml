@@ -1,24 +1,25 @@
 celebrities:
   - name: Adam Mickiewicz
-    birth_date: 24 grudnia
+    birth_date: 24 December
     hometown: Zaosie
 
   - name: Juliusz Słowacki
-    birth_date: 4 września
+    birth_date: 4 September
     hometown: Krzemieniec
 
   - name: Robert Lewandowski
-    birth_date: 21 sierpnia
+    birth_date: 21 August
     hometown: Leszno
 
   - name: Iga Świątek
-    birth_date: 31 maja
+    birth_date: 31 May
     hometown: Warszawa
 
   - name: Donald Tusk
-    birth_date: 22 kwietnia
+    birth_date: 22 April
     hometown: Gdańsk
 
   - name: Fryderyk Chopin
-    birth_date: 1 marca
+    birth_date: 1 March
     hometown: Żelazowa Wola
+
