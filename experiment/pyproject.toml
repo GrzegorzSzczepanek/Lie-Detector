@@ -10,7 +10,7 @@ package-mode = false
 python = "^3.11"
 pygame = "^2.5.2"
 pyyaml = "^6.0.1"
-brainaccess = {git = "https://gitlneural_networks.com/kn-neuron/brainaccess-python-api.git"}
+brainaccess = {git = "https://github.com/GrzegorzSzczepanek/brainaccess-python-api.git"}
 jupyter = "^1.0.0"
 prettytable = "^3.10.0"
 
