@@ -27,24 +27,24 @@ TEXT_COLOR = Color("#000000")
 TEXT_FONT = "Helvetica"
 TEXT_FONT_SIZE_AS_WIDTH_PERCENTAGE = 0.04
 
-CELEBRITY_DATA_TEXT = "DANE CELEBRYTY"
-CELEBRITY_DATA_HINT_TEXT = 'zawsze odpowiedź "tak"'
-RANDO_DATA_TEXT = "DANE LOSOWEJ OSOBY"
-RANDO_DATA_HINT_TEXT = 'zawsze odpowiedź "nie"'
-FAKE_IDENTITY_DATA_TEXT = "TWOJE FAŁSZYWE DANE"
-FAKE_IDENTITY_DATA_HINT_TEXT = "odpowiedź zależna od bloku"
-INCORRECT_RESPONSE_TEXT = "Podano niepoprawną odpowiedź!"
-INCORRECT_RESPONSE_SHOWN_DATA_TEXT = "WYŚWIETLONE DANE: "
-INCORRECT_RESPONSE_CORRECT_RESPONSE_TEXT = "POPRAWNA ODPOWIEDŹ: "
-TIMEOUT_TEXT = "Za długo!"
-BLOCK_END_TEXT = "Koniec bloku."
-BREAK_BETWEEN_BLOCKS_TEXT = "NASTĘPNY BLOK:"
+CELEBRITY_DATA_TEXT = "CELEBRITY DATA"
+CELEBRITY_DATA_HINT_TEXT = 'always answer "yes"'
+RANDO_DATA_TEXT = "RANDOM PERSON DATA"
+RANDO_DATA_HINT_TEXT = 'always answer "no"'
+FAKE_IDENTITY_DATA_TEXT = "YOUR FAKE DATA"
+FAKE_IDENTITY_DATA_HINT_TEXT = "response depends on the block"
+INCORRECT_RESPONSE_TEXT = "Incorrect response provided!"
+INCORRECT_RESPONSE_SHOWN_DATA_TEXT = "DISPLAYED DATA: "
+INCORRECT_RESPONSE_CORRECT_RESPONSE_TEXT = "CORRECT RESPONSE: "
+TIMEOUT_TEXT = "Too long!"
+BLOCK_END_TEXT = "End of block."
+BREAK_BETWEEN_BLOCKS_TEXT = "NEXT BLOCK:"
 BREAK_BETWEEN_PRACTICE_AND_PROPER_TEXTS = [
-    "Koniec prób treningowych.",
-    "Kolejne próby nie będą już treningowe.",
-    "Przerwa potrwa 10 sekund.",
+    "End of practice trials.",
+    "The next trials will no longer be practice.",
+    "The break will last 10 seconds.",
 ]
-RESULTS_TEXT = "Poprawnych odpowiedzi:"
+RESULTS_TEXT = "Correct responses:"
 
 EXPERIMENT_BLOCK_SEQUENCE_PART_1 = [
     ExperimentBlock.HONEST_RESPONSE_TO_TRUE_IDENTITY,
@@ -55,38 +55,38 @@ EXPERIMENT_BLOCK_SEQUENCE_PART_2 = [
     ExperimentBlock.DECEITFUL_RESPONSE_TO_FAKE_IDENTITY,
 ]
 
-RESPONSE_KEYS = {pygame.K_LSHIFT: "lewy Shift", pygame.K_RSHIFT: "prawy Shift"}
+RESPONSE_KEYS = {pygame.K_LSHIFT: "left Shift", pygame.K_RSHIFT: "right Shift"}
 CONFIRMATION_KEY = pygame.K_RSHIFT
 GO_BACK_KEY = pygame.K_LSHIFT
 GO_FORWARD_KEY = pygame.K_RSHIFT
 QUIT_KEY = pygame.K_RSHIFT
 
-GO_BACK_TEXT = f"Aby wrócić, naciśnij {RESPONSE_KEYS[GO_BACK_KEY]}."
-GO_FORWARD_TEXT = f"Aby przejść dalej, naciśnij {RESPONSE_KEYS[GO_FORWARD_KEY]}."
+GO_BACK_TEXT = f"To go back, press {RESPONSE_KEYS[GO_BACK_KEY]}."
+GO_FORWARD_TEXT = f"To go forward, press {RESPONSE_KEYS[GO_FORWARD_KEY]}."
 
 EXPERIMENT_BLOCK_TRANSLATIONS = {
     ExperimentBlock.HONEST_RESPONSE_TO_TRUE_IDENTITY: [
-        'dane celebryty → "tak"',
-        'dane losowej osoby → "nie"',
-        'Twoje dane → "tak"',
+        'celebrity data → "yes"',
+        'random person data → "no"',
+        'Your data → "yes"',
     ],
     ExperimentBlock.HONEST_RESPONSE_TO_FAKE_IDENTITY: [
-        'dane celebryty → "tak"',
-        'dane losowej osoby → "nie"',
-        'dane osoby, pod którą się podszywasz → "nie"',
+        'celebrity data → "yes"',
+        'random person data → "no"',
+        'data of the person you are impersonating → "no"',
     ],
     ExperimentBlock.DECEITFUL_RESPONSE_TO_TRUE_IDENTITY: [
-        'dane celebryty → "tak"',
-        'dane losowej osoby → "nie"',
-        'Twoje dane → "nie"',
+        'celebrity data → "yes"',
+        'random person data → "no"',
+        'Your data → "no"',
     ],
     ExperimentBlock.DECEITFUL_RESPONSE_TO_FAKE_IDENTITY: [
-        'dane celebryty → "tak"',
-        'dane losowej osoby → "nie"',
-        'dane osoby, pod którą się podszywasz → "tak"',
+        'celebrity data → "yes"',
+        'random person data → "no"',
+        'data of the person you are impersonating → "yes"',
     ],
 }
 PARTICIPANT_RESPONSE_TRANSLATIONS = {
-    ParticipantResponse.YES: '"tak"',
-    ParticipantResponse.NO: '"nie"',
+    ParticipantResponse.YES: '"yes"',
+    ParticipantResponse.NO: '"no"',
 }
