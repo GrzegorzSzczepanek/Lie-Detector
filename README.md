@@ -1,4 +1,3 @@
-# [PROJECT LOGO PLACEHOLDER]
 
 # Lie Detector EEG Experiment: Comprehensive Overview
 
