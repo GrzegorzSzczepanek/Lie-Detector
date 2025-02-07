@@ -1,11 +1,11 @@
-from neural_networks.ai.constants import (
+from neural_networks.constants import (
     IDS_TO_RUN_NAMES_FILE_PATH,
     IDS_TO_RUN_NAMES_SEPARATOR,
     MODEL_CONFIG_PATH,
     MODELS_PATH,
 )
-from neural_networks.ai.models.config_to_run import CONFIG_TO_RUN
-from neural_networks.ai.trainer.single_param_search import SingleParamSearch
+from neural_networks.models.config_to_run import CONFIG_TO_RUN
+from neural_networks.trainer.single_param_search import SingleParamSearch
 
 
 def main() -> None:

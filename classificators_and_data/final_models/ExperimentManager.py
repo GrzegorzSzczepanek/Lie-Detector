@@ -39,9 +39,7 @@ class ExperimentManager():
     def __init__(self, models: list[LieModel], split_strategies: list[SplitStrategy]) -> None:
         self._models = models
         self._split_strategies = split_strategies
-        self._df: pd.DataFrame = None
-
-        
+        self._df: pd.DataFrame = None        
 
     def run(self):
         for model in tqdm(self._models, desc="Models Progress"):
@@ -87,7 +85,7 @@ class ExperimentManager():
                     df = load_df(config["DATA_PATH"], **pre_config)
                     df = df.query("desired_answer == answer and data_type in ['REAL', 'FAKE']")
                     # df['label'] = df.apply(lambda x: 1 if x.block_no in [1,3] else 0, axis = 1)
-                    df.loc[:, 'label'] = df.apply(lambda x: 1 if x.block_no in [1, 3] else 0, axis=1)
+                    df.loc[:, 'label'] = df.apply(lambda x: 1 if x.block_no in [1, 4] else 0, axis=1)
                     dfs.append(df)
                 Xs_train, Xs_test = [], []
                 for df in dfs:
@@ -101,7 +99,7 @@ class ExperimentManager():
                 df = load_df(config["DATA_PATH"], **preprocess_config)
                 df = df.query("desired_answer == answer and data_type in ['REAL', 'FAKE']")
                 # df['label'] = df.apply(lambda x: 1 if x.block_no in [1,3] else 0, axis = 1)
-                df.loc[:, 'label'] = df.apply(lambda x: 1 if x.block_no in [1, 3] else 0, axis=1)
+                df.loc[:, 'label'] = df.apply(lambda x: 1 if x.block_no in [1, 4] else 0, axis=1)
                 self._df = df
         df_train, df_test = self._split_df(df, split_strategy)
         X_train, y_train = extract_X_y_from_df(df_train)
