@@ -4,6 +4,7 @@ ipykernel==6.29.5
 pandas==2.2.2
 tensorboard==2.17.1
 frozendict==2.4.6
-torch==2.5.1+cu124
-torchvision==0.20.1+cu124
-torchaudio==2.5.1+cu124
+torch==2.5.1
+torchvision==0.20.1
+torchaudio==2.5.1
+joblib==1.4.2
