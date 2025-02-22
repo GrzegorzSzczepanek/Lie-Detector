@@ -134,11 +134,12 @@ Extensive Exploratory Data Analysis (EDA) provided insights into response times,
 **Relevant Links:**
 
 - [EDA Folder & Notebooks](./classificators_and_data/EDA/README.md)
+### **Average Response Times**:
+  ![image](https://github.com/user-attachments/assets/18b4d885-b6c7-40f8-8a20-57d96676cdf3)
 
-_Placeholder for EDA Plots:_
+### **Event Related Potentials Visualizations**:
+   <img width="748" alt="image" src="https://github.com/user-attachments/assets/32881c6c-de87-4751-85d4-8dabc7c11b95" />
 
-- **Average Response Times**: ![Placeholder: Average Response Times](./classificators_and_data/EDA/plots_images/placeholder_average_response_times.png)
-- **ERP Visualizations**: ![Placeholder: ERP Plot](./classificators_and_data/EDA/plots_images/placeholder_erp_plot.png)
 
 ---
 
@@ -150,11 +151,10 @@ _Placeholder for EDA Plots:_
 
 ---
 
-## Placeholders for Media
+## **Screenshots from the GUI and device**
+ ![Image](https://github.com/user-attachments/assets/76dd4b81-2705-42c7-8c9d-e2e822c22355)
+ ![Image](https://github.com/user-attachments/assets/b70c7548-2e8e-46e4-a98f-09f21e888dd7)
 
-- **Logo at top**: Add your project logo above.
-- **Screenshots from the GUI or Experiment Setup**:
-  - ![Placeholder: GUI Screenshot](./experiment/src/gui/assets/placeholder_gui_screenshot.png)
-  - ![Placeholder: EEG Setup Screenshot](./experiment/src/assets/placeholder_eeg_setup.png)
+
 
 ---
