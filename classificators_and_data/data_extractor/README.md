@@ -31,12 +31,12 @@ Extracts features (X) and labels (y) from the DataFrame. The features are the EE
 After extracting the data using the `load_df` function, the resulting DataFrame will have the following structure:
 
 | subject  | block_no | duration | field      | data_type | answer | eeg     | desired_answer                          | label |
-| -------- | -------- | -------- | ---------- | --------- | ------ | ------- | --------------------------------------- | ----- | --- |
-| 1299BF1A | 1        | 0.840    | BIRTH_DATE | REAL      | YES    | <Epochs | 1 events (good & bad), 0 – 1 s (base... | YES   | 1   |
-| 1299BF1A | 1        | 0.744    | HOMETOWN   | REAL      | YES    | <Epochs | 1 events (good & bad), 0 – 1 s (base... | YES   | 1   |
-| 1299BF1A | 1        | 0.676    | HOMETOWN   | REAL      | YES    | <Epochs | 1 events (good & bad), 0 – 1 s (base... | YES   | 1   |
-| 1299BF1A | 1        | 0.620    | HOMETOWN   | REAL      | YES    | <Epochs | 1 events (good & bad), 0 – 1 s (base... | YES   | 1   |
-| 1299BF1A | 1        | 0.652    | NAME       | REAL      | YES    | <Epochs | 1 events (good & bad), 0 – 1 s (base... | YES   | 1   |
+| -------- | -------- | -------- | ---------- | --------- | ------ | ------- | --------------------------------------- | ----- |
+| 1299BF1A | 1        | 0.840    | BIRTH_DATE | REAL      | YES    | <Epochs | 1 events (good & bad), 0 – 1 s (base... | YES   |
+| 1299BF1A | 1        | 0.744    | HOMETOWN   | REAL      | YES    | <Epochs | 1 events (good & bad), 0 – 1 s (base... | YES   |
+| 1299BF1A | 1        | 0.676    | HOMETOWN   | REAL      | YES    | <Epochs | 1 events (good & bad), 0 – 1 s (base... | YES   |
+| 1299BF1A | 1        | 0.620    | HOMETOWN   | REAL      | YES    | <Epochs | 1 events (good & bad), 0 – 1 s (base... | YES   |
+| 1299BF1A | 1        | 0.652    | NAME       | REAL      | YES    | <Epochs | 1 events (good & bad), 0 – 1 s (base... | YES   |
 
 ## Example Usage
 
